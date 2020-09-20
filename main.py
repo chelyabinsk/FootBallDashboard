@@ -533,6 +533,11 @@ order_specific = st.sidebar.checkbox('Order specific',1)
 # Select by exact total number of goals
 top_n_selection = st.sidebar.checkbox('Top n teams from the previous season',0)
 
+st.markdown("""Select a type of Head to head. Two options are available.""")
+st.markdown("1) Total goals from previous fixture looks at the previous total number of goals in the previous identical match")
+st.markdown("2) x/y matching with total goals only selects matches where at least x out of y last matches had at least (however many)`total goals'")
+st.markdown("More filters available in pannel on the left")
+
 # Find previous total for all pairs
 total_type = st.selectbox(
     "Type of `Head to Head'", ['None','Total goals from previous fixture',"x/y & `total goals' criterion"],0
